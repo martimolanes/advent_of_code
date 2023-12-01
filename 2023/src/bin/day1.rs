@@ -13,5 +13,4 @@ fn main(){
         }
         println!("{}", accumulator);
     }
-
 }
