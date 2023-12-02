@@ -1,7 +1,6 @@
 use std::collections::HashMap;
 
-
-fn main(){
+fn main() {
     let mut numbers_from_1_to_10 = HashMap::new();
     numbers_from_1_to_10.insert("one", 1);
     numbers_from_1_to_10.insert("two", 2);
@@ -32,7 +31,10 @@ fn main(){
                     }
                 }
             }
-            accumulator += (numbers.first().unwrap().to_string() + &numbers.last().unwrap().to_string()).parse::<i32>().unwrap();
+            accumulator += (numbers.first().unwrap().to_string()
+                + &numbers.last().unwrap().to_string())
+                .parse::<i32>()
+                .unwrap();
         }
         println!("{}", accumulator);
     }
